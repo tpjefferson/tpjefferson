@@ -1,0 +1,59 @@
+print(r'''
+*******************************************************************************
+                    ____...------------...____
+               _.-"` /o/__ ____ __ __  __ \o\_`"-._
+             .'     / /                    \ \     '.
+             |=====/o/======================\o\=====|
+             |____/_/________..____..________\_\____|
+             /   _/ \_     <_o#\__/#o_>     _/ \_   \
+             \_________\####/_________/
+              |===\!/========================\!/===|
+              |   |=|          .---.         |=|   |
+              |===|o|=========/     \========|o|===|
+              |   | |         \() ()/        | |   |
+              |===|o|======{'-.) A (.-'}=====|o|===|
+              | __/ \__     '-.\uuu/.-'    __/ \__ |
+              |==== .'.'^'.'.====|
+          jgs |  _\o/   __  {.' __  '.} _   _\o/  _|
+              `""""-""""""""""""""""""""""""""-""""`
+*******************************************************************************
+''')
+print("Welcome to Treasure Island! \n "
+      "Your mission is to find the treasure. \n "
+      "Be careful...one wrong choice and your game is over.")
+print("You're at a cross road.")
+choice1 = input("Where do you want to go? \n "
+                'Type "left" or "right": \n').lower()
+
+if choice1 == "left":
+	#Continue in the game
+	print('Good choice!  \n'
+	      'You\'ve come to a lake with an island in the middle of it. \n')
+	choice2 = input('Would you like to wait for a ferry or swim across to the island? \n'
+	                'Type "wait" or "swim": \n').lower()
+	if choice2 == "wait":
+		#Continue in the game
+		print('Good choice! \n'
+		      'You\'ve made it to the island unharmed and find a house with three doors-- \n'
+		      'one red, one yellow, and one blue. \n')
+		choice3 = input('Which door will you choose to enter? \n'
+		                'Type "red", "yellow" or "blue": \n').lower()
+		if choice3 == "red":
+			print('Oh no!  You\'ve been burned alive by fire! \n'
+			      'GAME OVER!')
+		elif choice3 == "yellow":
+			print('YAY!  Way to go!  You win! \n'
+			      'You\'ve found the treasure box and are rich!')
+		elif choice3 == "blue":
+			print('Uh oh!  You\'ve opened the door to a scary beast! \n'
+			      'You had no time to react and he ate you! \n'
+			      'GAME OVER!')
+		else:
+			print('GAME OVER!')
+	else:
+		print('You\'ve been attacked by an angry trout and drowned. \n'
+	      'GAME OVER!')
+
+else:
+	print("Uh oh!  You've fallen into a hole. \n"
+	      "GAME OVER!")
